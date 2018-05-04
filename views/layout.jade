@@ -5,5 +5,18 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     block content
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyANCJjPN_2ND5xJ_GkQ5KWUIfbKqTcSgwQ",
+        authDomain: "arxiv-98417.firebaseapp.com",
+        databaseURL: "https://arxiv-98417.firebaseio.com",
+        projectId: "arxiv-98417",
+        storageBucket: "",
+        messagingSenderId: "352599169547"
+      };
+      firebase.initializeApp(config);
+    </script>
     script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
     script(src='/javascripts/global.js')
